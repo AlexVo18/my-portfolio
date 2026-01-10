@@ -1,5 +1,7 @@
+import ContainerWrapper from "../container";
+
 const Header = () => {
-  return <div>Header</div>;
+  return <ContainerWrapper defaultSpacing={false}>Header</ContainerWrapper>;
 };
 
 export default Header;

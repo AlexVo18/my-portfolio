@@ -1,5 +1,11 @@
+import ContainerWrapper from "../container";
+
 const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <ContainerWrapper defaultSpacing={false} className="text-center">
+      Footer
+    </ContainerWrapper>
+  );
 };
 
 export default Footer;
