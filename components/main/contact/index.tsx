@@ -2,7 +2,7 @@ import ContainerWrapper from "@/components/layout/container";
 
 const ContactSection = () => {
   return (
-    <ContainerWrapper>
+    <ContainerWrapper bgClassName="bg-secondary">
       <div>ContactSection</div>
     </ContainerWrapper>
   );
