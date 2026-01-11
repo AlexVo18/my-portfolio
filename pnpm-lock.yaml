@@ -38,6 +38,9 @@ importers:
       shadcn:
         specifier: ^3.6.3
         version: 3.6.3(@types/node@20.19.28)(hono@4.11.3)(typescript@5.9.3)
+      simple-icons:
+        specifier: ^16.5.0
+        version: 16.5.0
       tailwind-merge:
         specifier: ^3.4.0
         version: 3.4.0
@@ -3355,6 +3358,10 @@ packages:
   signal-exit@4.1.0:
     resolution: {integrity: sha512-bzyZ1e88w9O1iNJbKnOlvYTrWPDl46O1bG0D3XInv+9tkPrxrN8jUUTiFlDkkmKWgn1M6CfIA13SuGqOa9Korw==}
     engines: {node: '>=14'}
+
+  simple-icons@16.5.0:
+    resolution: {integrity: sha512-72nn0oHADKx6Hknu7q6M0vfL8LiCUMKABOHane2+4xdqaFBSHfNNBjuZioihiqVQMz7IvVle4NKAM0IlXvl/9A==}
+    engines: {node: '>=0.12.18'}
 
   sisteransi@1.0.5:
     resolution: {integrity: sha512-bLGGlR1QxBcynn2d5YmDX4MGjlZvy2MRBDRNHLJ8VI6l6+9FUiyTFNJ0IveOSP0bcXgVDPRcfGqA0pjaqUpfVg==}
@@ -7345,6 +7352,8 @@ snapshots:
   signal-exit@3.0.7: {}
 
   signal-exit@4.1.0: {}
+
+  simple-icons@16.5.0: {}
 
   sisteransi@1.0.5: {}
 

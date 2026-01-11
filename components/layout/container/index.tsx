@@ -11,7 +11,7 @@ const ContainerWrapper = ({
   children,
   className,
   defaultSpacing = true,
-  bgClassName,
+  bgClassName = "",
   ...props
 }: Props) => {
   return (

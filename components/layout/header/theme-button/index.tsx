@@ -1,6 +1,11 @@
 "use client";
 
 import Button from "@/components/common/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import { useTheme } from "next-themes";
 import { Moon, Sun } from "lucide-react";
 
@@ -12,10 +17,17 @@ const ThemeButton = () => {
   };
 
   return (
-    <Button onClick={handleChangeTheme}>
-      <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
-      <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
-    </Button>
+    <Tooltip>
+      <TooltipTrigger asChild>
+        <Button onClick={handleChangeTheme}>
+          <Sun className="h-[1.2rem] w-[1.2rem] scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90" />
+          <Moon className="absolute h-[1.2rem] w-[1.2rem] scale-0 rotate-90 transition-all dark:scale-100 dark:rotate-0" />
+        </Button>
+      </TooltipTrigger>
+      <TooltipContent>
+        <p>Change Theme</p>
+      </TooltipContent>
+    </Tooltip>
   );
 };
 

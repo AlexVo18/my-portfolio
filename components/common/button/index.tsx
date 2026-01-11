@@ -1,12 +1,16 @@
 import { Button as PrimeButton } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 import React from "react";
 
-type ButtonProps = React.ComponentProps<typeof PrimeButton>;
+type Props = { className?: string } & Omit<
+  React.ComponentProps<typeof PrimeButton>,
+  "className"
+>;
 
-const Button = ({ children, ...props }: ButtonProps) => {
+const Button = ({ children, className, ...props }: Props) => {
   return (
     <PrimeButton
-      className="transition duration-300 hover: cursor-pointer"
+      className={cn("transition duration-300 hover: cursor-pointer", className)}
       variant={"ghost"}
       {...props}
     >
