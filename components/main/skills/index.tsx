@@ -2,9 +2,9 @@ import ContainerWrapper from "@/components/layout/container";
 
 const SkillsSection = () => {
   return (
-    <ContainerWrapper>
+    <div>
       <div>SkillsSection</div>
-    </ContainerWrapper>
+    </div>
   );
 };
 

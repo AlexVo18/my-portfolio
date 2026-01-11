@@ -16,9 +16,9 @@ const BackToTopButton = () => {
       <Button
         variant={"ghost"}
         onClick={scrollToTop}
-        className="rounded-full transition hover:scale-110 bg-foreground hover:bg-foreground shadow-xl/25"
+        className="rounded-full transition hover:scale-110 bg-foreground hover:bg-foreground dark:hover:bg-foreground shadow-xl/25"
       >
-        <ArrowUp className="text-background" />
+        <ArrowUp className="text-background " />
       </Button>
     </div>
   );

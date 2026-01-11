@@ -1,11 +1,5 @@
-import ContainerWrapper from "@/components/layout/container";
-
 const HeroSection = () => {
-  return (
-    <ContainerWrapper>
-      <div>HeroSection</div>
-    </ContainerWrapper>
-  );
+  return <div>HeroSection</div>;
 };
 
 export default HeroSection;

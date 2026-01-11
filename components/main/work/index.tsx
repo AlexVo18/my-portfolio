@@ -3,10 +3,10 @@ import ContainerWrapper from "@/components/layout/container";
 
 const WorkSection = () => {
   return (
-    <ContainerWrapper bgClassName="bg-secondary">
+    <div>
       <Title>Experiences.</Title>
       <div>WorkSection</div>
-    </ContainerWrapper>
+    </div>
   );
 };
 

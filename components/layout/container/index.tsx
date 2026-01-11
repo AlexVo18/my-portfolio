@@ -5,6 +5,7 @@ type Props = {
   className?: string;
   defaultSpacing?: boolean;
   bgClassName?: string;
+  as?: React.ElementType;
 } & Omit<React.HTMLAttributes<HTMLDivElement>, "className">;
 
 const ContainerWrapper = ({
@@ -12,17 +13,18 @@ const ContainerWrapper = ({
   className,
   defaultSpacing = true,
   bgClassName = "",
+  as: Component = "div",
   ...props
 }: Props) => {
   return (
-    <div className={cn(bgClassName, defaultSpacing && "sm:py-20 py-10")}>
+    <Component className={cn(bgClassName, defaultSpacing && "sm:py-20 py-10")}>
       <div
         className={cn("container mx-auto max-w-6xl sm:px-20 px-8", className)}
         {...props}
       >
         {children}
       </div>
-    </div>
+    </Component>
   );
 };
 

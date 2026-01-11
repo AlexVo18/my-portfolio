@@ -24,8 +24,8 @@ const Header = () => {
       defaultSpacing={false}
       className="flex items-center justify-between py-4"
       bgClassName={cn(
-        "fixed w-full bg-background border-0  transition-all duration-100",
-        isScrolled && "border-b border-foreground/10 dark:border-foreground/20"
+        "sticky top-0 w-full bg-background border-0  transition-all duration-100",
+        isScrolled && "border-b border-foreground/10 dark:border-foreground/20 "
       )}
     >
       <div className="text-xl">Vo Minh Tri</div>

@@ -2,7 +2,7 @@ import ContainerWrapper from "@/components/layout/container";
 
 const ProjectSection = () => {
   return (
-    <ContainerWrapper>
+    <div>
       <div>ProjectSection</div>
       <div>ProjectSection</div>
       <div>ProjectSection</div>
@@ -29,7 +29,7 @@ const ProjectSection = () => {
       <div>ProjectSection</div>
       <div>ProjectSection</div>
       <div>ProjectSection</div>
-    </ContainerWrapper>
+    </div>
   );
 };
 
