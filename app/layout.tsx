@@ -6,6 +6,7 @@ import Footer from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/provider/theme-provider";
 import BackToTopButton from "@/components/layout/back-to-top";
 import { cn } from "@/lib/utils";
+import ScrollSpy from "@/components/layout/scroll-spy";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -50,6 +51,7 @@ export default function RootLayout({
             {children}
             <Footer />
             <BackToTopButton />
+            <ScrollSpy />
           </div>
         </ThemeProvider>
       </body>

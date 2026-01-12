@@ -7,19 +7,25 @@ import SkillsSection from "@/components/main/skills";
 import WorkSection from "@/components/main/work";
 import { cn } from "@/lib/utils";
 
-export const Sections = [
-  { id: "hero", component: <HeroSection /> },
-  { id: "about", component: <AboutSection /> },
-  { id: "skills", component: <SkillsSection /> },
-  { id: "work", component: <WorkSection /> },
-  { id: "projects", component: <ProjectSection /> },
-  { id: "contact", component: <ContactSection /> },
+export type SectionType = {
+  id: string;
+  component: React.ReactNode;
+  label: string;
+};
+
+export const sections: SectionType[] = [
+  { id: "hero", component: <HeroSection />, label: "Home" },
+  { id: "about", component: <AboutSection />, label: "About me" },
+  { id: "skills", component: <SkillsSection />, label: "Skills" },
+  { id: "work", component: <WorkSection />, label: "Experiences" },
+  { id: "projects", component: <ProjectSection />, label: "Projects" },
+  { id: "contact", component: <ContactSection />, label: "Contact" },
 ] as const;
 
 export default function Page() {
   return (
     <>
-      {Sections.map((section, index) => (
+      {sections.map((section, index) => (
         <ContainerWrapper
           as={"section"}
           key={section.id}
