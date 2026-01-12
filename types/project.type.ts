@@ -1,3 +1,5 @@
+import { IconType } from "@icons-pack/react-simple-icons";
+
 export type ProjectDataType = {
   name: string;
   types: string[];
@@ -5,7 +7,7 @@ export type ProjectDataType = {
   codeHref: projectHrefType[];
   techs: string[];
   startDate: string;
-  endDate: string;
+  endDate: string | null;
   description: string;
   context: string;
   projectImages: ProjectImageType[];
@@ -15,7 +17,7 @@ export type ProjectDataType = {
 };
 
 export type TechType = {
-  icon: string;
+  icon?: string | IconType | React.ComponentType<React.SVGProps<SVGSVGElement>>;
   name: string;
 };
 
